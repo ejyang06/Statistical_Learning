@@ -14,7 +14,7 @@ x+y
 ls()
 rm(x,y)
 ls()
-rm(list=ls())
+rm(list=ls()) # Removing a variable called list, and list could store all the ls() objects
 ?matrix
 x=matrix(data=c(1,2,3,4), nrow=2, ncol=2)
 x
@@ -22,6 +22,8 @@ x=matrix(c(1,2,3,4),2,2)
 matrix(c(1,2,3,4),2,2,byrow=TRUE)
 sqrt(x)
 x^2
+
+
 x=rnorm(50)
 y=x+rnorm(50,mean=50,sd=.1)
 cor(x,y)
